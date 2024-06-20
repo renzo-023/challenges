@@ -1,7 +1,8 @@
 /*abrir o menu no mobile*/
 const navMenu = document.getElementById('nav-menu'),
 navToggle = document.getElementById('nav-toggle'),
-navClose = document.getElementById('nav-close');
+navClose = document.getElementById('nav-close'),
+navButton = document.getElementById('nav-button');
 
 if(navToggle){
     navToggle.addEventListener("click", () => {
@@ -9,9 +10,21 @@ if(navToggle){
     });
 };
 
+if(navToggle){
+    navToggle.addEventListener("click", () => {
+      navButton.classList.add("close-button");
+    });
+};
+
 if(navClose){
     navClose.addEventListener("click", () => {
         navMenu.classList.remove("show-menu")
+    });
+};
+
+if(navClose){
+    navClose.addEventListener("click", () => {
+        navButton.classList.remove("close-button")
     });
 };
 
