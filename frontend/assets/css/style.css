@@ -172,7 +172,7 @@ header {
     left: 0;
     width: 100%;
     padding: 4rem 0 3rem;
-    background-color: rgba(15, 17, 22, 0.897);
+    background-color: rgba(15, 17, 22, 0.952);
     transition: all ease-in-out 600ms;
   }
 
@@ -286,7 +286,7 @@ header {
   bottom: -0.25rem;
 }
 
-@media (max-width: 936px) {
+@media (max-width: 1013px) {
   .home__container {
     grid-template-columns: 1fr;
   }
@@ -362,17 +362,30 @@ header {
 }
 
 @media (max-width: 790px) {
+  .advantages__container {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .float {
+    bottom: 3rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .advantages__grid,
   .advantages__cards {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .advantages__card {
-    max-width: 200px;
-  }
-
   .float {
     bottom: unset;
+  }
+
+  .advantages__card {
+    width: 100%;
+    max-width: 100%;
   }
 }
