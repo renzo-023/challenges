@@ -18,13 +18,13 @@ if(navToggle){
 
 if(navClose){
     navClose.addEventListener("click", () => {
-        navMenu.classList.remove("show-menu")
+        navMenu.classList.remove("show-menu");
     });
 };
 
 if(navClose){
     navClose.addEventListener("click", () => {
-        navButton.classList.remove("close-button")
+        navButton.classList.remove("close-button");
     });
 };
 
@@ -36,3 +36,24 @@ function scrollHeader() {
 };
 
 window.addEventListener("scroll", scrollHeader);
+
+/* alterando o click do button */
+
+document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll(".footer__button");
+    const dataSections = document.querySelectorAll(".footer__data");
+
+    buttons.forEach((button) => {
+        button.addEventListener("click", function () {
+            const target = this.getAtributte("data-target");
+            const targetSection = document.querySelector(target);
+
+
+            buttons.forEach((btn) => btn.classList.remove("active"));
+            dataSections.forEach((section) => (section.style.display = "none"));
+
+            this.classList.add("active");
+            targetSection.style.display = "grid";
+        });
+    });
+});
