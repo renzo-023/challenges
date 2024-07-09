@@ -471,6 +471,7 @@ header {
 
 .footer__data:not(#you) {
   display: none;
+  bottom: -110%;
 }
 
 .light {

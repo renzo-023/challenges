@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     buttons.forEach((button) => {
         button.addEventListener("click", function () {
-            const target = this.getAtributte("data-target");
+            const target = this.getAttribute("data-target");
             const targetSection = document.querySelector(target);
 
 
