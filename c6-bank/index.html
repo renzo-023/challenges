@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>C6 Bank</title>
+  </head>
+  <body>
+    <main>
+      <header class="header" id="header">
+        <nav class="nav container">
+          <a href="#" class="nav__image">
+            <img
+              src="./assets/img/logo.svg"
+              alt="logo da empresa c6 bank, com a cor branca"
+            />
+          </a>
+          <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#" class="nav__link">Vantagens</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link"
+                  >Para Você
+                  <img
+                    src="./assets/icons/arrow.svg"
+                    alt="icone de seta apontada para baixo"
+                    class="nav__arrow"
+                /></a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link"
+                  >Para seu negócio
+                  <img
+                    src="./assets/icons/arrow.svg"
+                    alt="icone de seta apontada para baixo"
+                    class="nav__arrow"
+                /></a>
+              </li>
+              <a href="#" class="nav__button button__none">ABRIR CONTA</a>
+              <div class="nav__close" id="nav-close">
+                <i class="ri-close-line icon"></i>
+              </div>
+            </ul>
+          </div>
+          <a href="#" class="nav__button" id="nav-button">ABRIR CONTA</a>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line icon"></i>
+          </div>
+        </nav>
+      </header>
+      <section class="home">
+        <article class="home__container container">
+          <article class="home__data">
+            <div class="home__header">
+              <span class="home__tag">novo</span>
+              <p class="home__text">Conheça nosso Programa de Pontos Átomos</p>
+            </div>
+            <h1 class="home__title">
+              Um banco transparente, completo e com sua cara
+            </h1>
+            <p class="home__copy">
+              Conta digital e cartão de crédito gratuitos. Saques e
+              transferências sem tarifa.
+            </p>
+            <a href="#" class="home__button">NOSSOS PRODUTOS</a>
+          </article>
+          <article class="home__image">
+            <img
+              src="./assets/img/home/capa.webp"
+              alt="imagem de uma mulher branca de cabelos loiros e camisa branca segurando um cartão black do c6 bank em uma mão, e um celular na outra mão"
+            />
+          </article>
+        </article>
+      </section>
+      <section class="advantages section" id="advantages">
+        <article class="advantages__container container">
+          <article class="advantages__data">
+            <div class="advantages__header">
+              <h2 class="advantages__title">Sem tarifas:</h2>
+              <h3 class="advantages__subtitle">economize seu dinheiro</h3>
+            </div>
+            <article class="advantages__grid">
+              <div class="advantages__item">
+                <i class="ri-bank-line advantages__icon"></i>
+                <p class="advantages__text">
+                  Saques nos caixas da rede Banco24Horas
+                </p>
+                <p class="advantages__copy">
+                  São mais de 23 mil caixas em 680 municípios do Brasil. Saques
+                  ilimitados sem cobrança de tarifa.
+                </p>
+              </div>
+              <div class="advantages__item">
+                <i class="ri-exchange-dollar-line advantages__icon"></i>
+                <p class="advantages__text">Transferências e TEDs ilimitadas</p>
+                <p class="advantages__copy">
+                  Movimente seu dinheiro para qualquer conta em qualquer banco
+                  sem pagar nada por isso.
+                </p>
+              </div>
+              <div class="advantages__item">
+                <i class="ri-barcode-line advantages__icon"></i>
+                <p class="advantages__text">Depósito por boleto</p>
+                <p class="advantages__copy">
+                  Emita boletos grátis e traga dinheiro para a sua conta C6 sem
+                  pagar tarifas.
+                </p>
+              </div>
+              <div class="advantages__item">
+                <i class="ri-24-hours-line advantages__icon"></i>
+                <p class="advantages__text">Atendimento 24h</p>
+                <p class="advantages__copy">
+                  Conte com a gente 24h por dia, 7 dias por semana pelo chat do
+                  app.
+                </p>
+              </div>
+            </article>
+          </article>
+          <article class="advantages__cards">
+            <img
+              src="./assets/img/advantages/card-1.webp"
+              alt="cartão do c6 bank com a cor azul claro"
+              class="advantages__card"
+            />
+            <img
+              src="./assets/img/advantages/card-2.webp"
+              alt="cartão do c6 bank com a cor rosa"
+              class="advantages__card float"
+            />
+            <img
+              src="./assets/img/advantages/card-3.webp"
+              alt="cartão do c6 bank com a cor dourada"
+              class="advantages__card"
+            />
+            <img
+              src="./assets/img/advantages/card-4.webp"
+              alt="cartão do c6 bank com a cor prata"
+              class="advantages__card float"
+            />
+          </article>
+        </article>
+      </section>
+      <footer class="footer">
+        <article class="footer__container container">
+          <article class="footer__header">
+            <div class="footer___copy">
+              <h2 class="footer__title">Um banco completo</h2>
+              <p class="footer__text">com produtos exclusivos.</p>
+            </div>
+            <div class="footer__buttons">
+              <a class="footer__button active" data-target="#you">PARA VOCÊ</a>
+              <a class="footer__button" data-target="#company">
+                PARA SUA EMPRESA
+              </a>
+            </div>
+          </article>
+          <article class="footer__data" data-content id="you">
+            <div class="footer__copy">
+              <h3 class="footer__title light">Para você</h3>
+              <p class="footer__text gray">vantagens exclusivas para você</p>
+              <img
+                src="./assets/icons/nfc.svg"
+                alt="ícone de nfc para aproximação"
+                class="footer__nfc"
+              />
+            </div>
+            <div class="footer__image">
+              <img
+                src="./assets/img/footer/card.webp"
+                alt="cartão black do c6 bank flutuando sobre um celular"
+                class="footer__card"
+              />
+              <img
+                src="./assets/img/footer/mobile.webp"
+                alt="celular com print do aplicativo c6 bank"
+                class="footer__mobile"
+              />
+            </div>
+          </article>
+          <article class="footer__data" id="company">
+            <div class="footer__copy">
+              <h3 class="footer__title light">Para sua empresa</h3>
+              <p class="footer__text gray">
+                vantagens exclusivas para sua empresa
+              </p>
+              <img
+                src="./assets/icons/nfc.svg"
+                alt="ícone de nfc para aproximação"
+                class="footer__nfc"
+              />
+            </div>
+            <div class="footer__image">
+              <img
+                src="./assets/img/footer/card.webp"
+                alt="cartão black do c6 bank flutuando sobre um celular"
+                class="footer__card"
+              />
+              <img
+                src="./assets/img/footer/mobile.webp"
+                alt="celular com print do aplicativo c6 bank"
+                class="footer__mobile"
+              />
+            </div>
+          </article>
+        </article>
+      </footer>
+    </main>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
